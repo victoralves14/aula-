@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #041a23;
+    padding: 10px 0;
+}
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav .menu li {
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu li a {
+    color: rgb(255, 254, 254);
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav .menu li a:hover {
+    background-color: #34495e;
+}
+
+nav .menu li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav .menu li:hover .dropdown {
+    display: block;
+}
+
+nav .menu li .dropdown li {
+    display: block;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #102539; 
+    border-radius: 10px; 
+}
+
+.slides {
+    display: flex;
+    width: 200%; 
+    animation: slideAnimation 8s infinite ease-in-out;
+}
+
+.slide {
+    width: 50%; 
+    flex-shrink: 0;
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.slide img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+.products {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+}
+
+.products h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #cdcbcb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card .price {
+    font-size: 1.5em;
+    color: #041a23;
+}
+
+.card button {
+    background-color: #000000;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #000000;
+}
+
+footer {
+    background-color: #041a23;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+footer .footer-content ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .footer-content ul li a {
+    color: rgb(33, 67, 146);
+    text-decoration: none;
+}
+
+footer .footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+
